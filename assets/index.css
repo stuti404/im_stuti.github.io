@@ -17,7 +17,8 @@ h1{
 
 .h {
   font-weight: bold;
-  color:#D47AE8;
+  /* color:#D47AE8; */
+  color:black;
   font-size: 5.625rem;
   text-align: center;
 }
