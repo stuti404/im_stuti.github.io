@@ -1,0 +1,249 @@
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  padding: 30px;
+  background-color: #D47AE8;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* Contact nmne section   */
+
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.page-wr{
+  min-height: 70vh;
+}
+
+
+.p-t-180 {
+  padding-top: 50px;
+}
+
+.p-t-30 {
+  padding-top: 30px;
+}
+
+.p-b-100 {
+  padding-bottom: 100px;
+}
+
+.wr{
+  margin: 0 auto;
+}
+
+.wr--w960 {
+  max-width: 960px;
+}
+
+.btnn {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 25px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.btn--radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.btn--green {
+  background: #D47AE8;
+}
+
+.btn--green:hover {
+  background: #D47AE8;
+}
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+
+.input--style-2 {
+  padding: 9px 0;
+  color: #666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input--style-2::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #808080;
+}
+
+.input--style-2:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #808080;
+  opacity: 1;
+}
+
+.input--style-2::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #808080;
+  opacity: 1;
+}
+
+.input--style-2:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #808080;
+}
+
+.input--style-2:-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #808080;
+}
+
+
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+
+.ca{
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.ca-2 {
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 100%;
+  display: table;
+}
+
+.ca-2 .ca-heading {
+  background: url("hij.png") top left/cover no-repeat;
+  width: 29.1%;
+  display: table-cell;
+}
+
+.ca-2 .ca-body {
+  display: table-cell;
+  padding: 80px 90px;
+  padding-bottom: 88px;
+}
+
+@media (max-width: 767px) {
+  .ca-2 {
+    display: block;
+  }
+  .ca-2 .ca-heading {
+    width: 100%;
+    display: block;
+    padding-top: 300px;
+    background-position: left center;
+  }
+  .ca-2 .ca-body {
+    display: block;
+    padding: 60px 50px;
+  }
+}
+
+/* ---------------------------------------- Grid ----------------------------------------------- */
+.row0 {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 10px 10px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column0 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 125%;
+  padding: 40px 4px;
+}
+
+.column0 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column0 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column0 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}

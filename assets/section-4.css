@@ -1,0 +1,146 @@
+
+::selection {
+  color: #7F8B52;
+}
+
+.wapp {
+  max-width: 1080px;
+  margin: 50px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.wapp .center-line {
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #D47AE8;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.wapp .row {
+  display: flex;
+}
+
+.wapp .row-1 {
+  justify-content: flex-start;
+}
+
+.wapp .row-2 {
+  justify-content: flex-end;
+}
+
+.wapp .row section {
+  background: #D47AE8;
+  border-radius: 5px;
+  width: calc(50% - 40px);
+  padding: 20px;
+  position: relative;
+}
+
+.wapp .row section::before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background: #D47AE8;
+  top: 28px;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.row-1 section::before {
+  right: -7px;
+}
+
+.row-2 section::before {
+  left: -7px;
+}
+
+.row section .a-icon,
+.center-line .scroll-icon {
+  position: absolute;
+  background: #ffffff;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #D47AE8;
+  font-size: 17px;
+  box-shadow: 0 0 0 4px #D47AE8, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.center-line .scroll-icon {
+  bottom: 0px;
+  left: 50%;
+  font-size: 25px;
+  transform: translateX(-50%);
+}
+
+.row-1 section .a-icon {
+  top: 15px;
+  right: -60px;
+}
+
+.row-2 section .a-icon {
+  top: 15px;
+  left: -60px;
+}
+
+.row section .details,
+.row section .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row section .details .title {
+  color: white;
+  padding-top: 10px;
+  font-size: 1.0rem;
+  text-align: left;
+  margin-top: 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.row section p {
+  margin: 10px 0 17px 0;
+}
+
+@media(max-width: 790px) {
+  .wapp .center-line {
+    left: 40px;
+  }
+
+  .wapp .row {
+    margin: 30px 0 3px 60px;
+  }
+
+  .wapp .row section {
+    width: 100%;
+  }
+
+  .row-1 section::before {
+    left: -7px;
+  }
+
+  .row-1 section .a-icon {
+    left: -60px;
+  }
+}
+
+@media(max-width: 440px) {
+
+  .wapp .center-line,
+  .row section::before,
+  .row section .a-icon {
+    display: none;
+  }
+
+  .wapp .row {
+    margin: 10px 0;
+  }
+}
