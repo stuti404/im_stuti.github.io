@@ -17,7 +17,7 @@ h1{
 
 .h {
   font-weight: bold;
-  /* color:#D47AE8; */
+  /* color:black; */
   color:black;
   font-size: 5.625rem;
   text-align: center;
@@ -25,7 +25,7 @@ h1{
 
 .hh {
   font-weight: bold;
-  color: #D47AE8;
+  color: black;
   padding-top: 50px;
   padding-left: 50px;
   font-size: 3.625rem;
@@ -53,7 +53,7 @@ h1{
 p {
   display: flex;
   justify-content: center;
-  color: #D47AE8;
+  color: black;
 }
 /* nav side */
 
@@ -64,7 +64,7 @@ p {
   top: 0;
   height: 100%;
   width: 78px;
-  background: #D47AE8;
+  background: black;
   padding: 6px 14px;
   z-index: 99;
   transition: all 0.5s ease;
@@ -159,7 +159,7 @@ p {
   align-items: center;
   text-decoration: none;
   transition: all 0.4s ease;
-  background: #D47AE8;
+  background: black;
 }
 .sidebar li a:hover{
   background: #FFF;
@@ -262,13 +262,13 @@ p {
 }
 .icon{
   padding: 10px;
-  color: #D47AE8;
+  color: black;
 }
 /* Botton hire me */
 .button {
   padding-bottom: 5PX;
   border-radius: 10px;
-  background-color: #D47AE8;
+  background-color: black;
   border: none;
   color: #FFFFFF;
   text-align: center;

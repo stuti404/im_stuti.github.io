@@ -51,13 +51,13 @@
 .content .box .counter {
   font-size: 50px;
   font-weight: 500;
-  color: #D47AE8;
+  color: black;
   font-family: sans-serif;
 }
 
 .content .box .text {
   font-weight: 400;
-  color: #D47AE8;
+  color: black;
 }
 
 @media screen and (max-width: 1036px) {

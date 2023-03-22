@@ -34,7 +34,7 @@
 
 .flip-card-back {
   padding: 30px;
-  background-color: #D47AE8;
+  background-color: black;
   color: white;
   transform: rotateY(180deg);
 }
@@ -94,11 +94,11 @@ button {
 }
 
 .btn--green {
-  background: #D47AE8;
+  background: black;
 }
 
 .btn--green:hover {
-  background: #D47AE8;
+  background: black;
 }
 input {
   outline: none;
@@ -180,7 +180,7 @@ input {
 }
 
 .ca-2 .ca-heading {
-  background: url("hij.png") top left/cover no-repeat;
+  background: url("black.png") top left/cover no-repeat;
   width: 29.1%;
   display: table-cell;
 }
